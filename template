@@ -1,21 +1,10 @@
 <!DOCTYPE html>
 <meta charset=utf-8>
-<link href="css/style.css" rel="stylesheet">
-<title>Move on</title>
+<link href="../css/style.css" rel="stylesheet">
+<title></title>
 
 <xmp theme="simplex" style="display:none;">
-## Raspberry PI
-
-* [VideoPI](post/2013-03-13-videopi.html)
-  
-  A web-based Raspberry PI remote control for online video playing.
-
-## Java
-
-## Groovy
-
-## Python
-
+# content here
 </xmp>
 <script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
 <footer class="navbar-inner">

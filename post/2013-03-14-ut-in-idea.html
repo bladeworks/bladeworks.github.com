@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<meta charset=utf-8>
+<link href="../css/style.css" rel="stylesheet">
+<title>Run Grails Unit Test in intellij idea</title>
+
+<xmp theme="simplex" style="display:none;">
+Edit Configuration and put the following in the command line:
+
+```
+test-app unit:spock XXXService -echoOut
+```
+
+If we use IDEA unit test runner, the grails environment will not be initialized. For example, the log will not be ready to use. So you may got the following exception:
+
+```
+groovy.lang.MissingPropertyException: No such property: log for class: grails.buildtestdata.BuildTestDataService
+```
+
+</xmp>
+<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
+<footer class="navbar-inner">
+  <div class="footer container">
+    2013 &copy; bladeworks
+  </div>
+</footer>

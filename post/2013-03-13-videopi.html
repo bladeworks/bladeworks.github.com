@@ -115,6 +115,25 @@ VideoPI是基于bottlepy以及jquerymobile的一个RB的遥控器，可以在电
 * 点击Browse可以选择腾讯视频，优酷以及Youtube。
 * 在相应网站找到视频后点击机会在RB中播放。
 
+## 其余可能有用的设置
+
+* Fix smsc95xx 1-1.1:1.0: eth0: kevent 2 may have been dropped
+  * Add smsc95xx.turbo_mode=N in /boot/cmdline.txt
+  * Modify /etc/sysctl.conf value:
+
+    ```
+    #vm.vfs_cache_pressure = 100
+    vm.vfs_cache_pressure = 300
+    #vm.min_free_kbytes=8192
+    vm.min_free_kbytes=32768
+    ```
+
+    Update sysctl:
+
+    ```
+    sudo sysctl -p
+    ```
+* Add ipv6.disable=1 to /boot/cmdline.txt to disable ipv6
 </xmp>
 
         <div id="disqus_thread" class="container"></div>
